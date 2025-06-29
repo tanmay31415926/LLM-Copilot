@@ -2,7 +2,7 @@
 
 We implemented a Transformer model inspired by Google Brain’s paper [*Attention Is All You Need*](https://arxiv.org/abs/1706.03762), trained entirely at the character level to generate valid and meaningful C++ code.
 
-This project which doesn't specify any explicit tokenization or syntax awareness, generates code with structure, variable usage, and correct syntax — purely by predicting one character at a time.
+This project generates code with structure, variable usage, and correct syntax — purely by predicting one character at a time, without specifying any explicit tokenization or syntax awareness.
 
 ---
 
