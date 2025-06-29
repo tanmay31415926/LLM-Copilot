@@ -2,7 +2,7 @@
 
 We implemented a Transformer model inspired by Google Brain’s paper [*Attention Is All You Need*](https://arxiv.org/abs/1706.03762), trained entirely at the character level to generate valid and meaningful C++ code.
 
-This project demonstrates that even without specifying any explicit tokenization or syntax awareness, a model can learn to generate code with structure, variable usage, and correct syntax — purely by predicting one character at a time.
+This project which doesn't specify any explicit tokenization or syntax awareness, generates code with structure, variable usage, and correct syntax — purely by predicting one character at a time.
 
 ---
 
@@ -85,8 +85,8 @@ python src/generate.py --prompt "int main() {" --output examples/generated_outpu
 ---
 
 ## Customization
-
-- You can replace the training dataset (`cpp_code_dataset.txt`) with any custom C++ or other language files.
+- You can use this model to predict any form of data which can use previous stream of output to predict the next output (e.g.custom chatbot)
+- You just have to replace the training dataset (`cpp_code_dataset.txt`) with training dataset.
 - The architecture is modular and can be extended with more layers, token-level training, or other features.
 - You can fine-tune the model or export it for downstream use cases like code completion tools.
 
@@ -106,6 +106,7 @@ python src/generate.py --prompt "int main() {" --output examples/generated_outpu
 
 - Train on larger datasets from open-source C++ projects
 - Add token-level processing for better long-term context
+- Customize on other data prediction sets for exteded practical use.
 - Integrate evaluation metrics like perplexity or BLEU
 - Build a simple web UI for interactive use
 
